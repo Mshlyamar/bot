@@ -10,7 +10,7 @@ var bot = new TelegramBot(token, {polling: true});
 bot.onText(/./, function (msg) {
     var chatId = msg.chat.id;
     switch(msg.text){
-    	case "IP-72":ы
+    	case "IP-72":
     		url = 'http://rozklad.kpi.ua/Schedules/ViewSchedule.aspx?g=bb920257-c159-4dba-b630-48485f153785';
     		needle.get(url, function(err, res){
 			if(err) throw(err);
